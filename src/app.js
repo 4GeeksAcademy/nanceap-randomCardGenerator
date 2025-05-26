@@ -5,7 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = () => {
+function generarCarta() {
   const palos = ['heart', 'spade', 'club', 'diamond'];
   const simbolos = {
     heart: '♥',
@@ -31,7 +31,14 @@ window.onload = () => {
     ${valor}
     <div class="palo-inferior ${colorClass}">${simbolo}</div>
   `;
+}
+
+window.onload = () => {
+  generarCarta();
+
+  document.getElementById('nuevaCartaBtn').addEventListener('click', generarCarta);
 };
+
 
 
 
