@@ -1,5 +1,33 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+.carta {
+  width: 19rem;
+  height: 28rem;
+  border-radius: 1rem;
+  position: relative;
 }
+
+.palo-superior,
+.palo-inferior {
+  position: absolute;
+  font-size: 2.5rem;
+}
+
+.palo-superior {
+  top: 0.75rem;
+  left: 1rem;
+}
+
+.palo-inferior {
+  bottom: 0.75rem;
+  right: 1rem;
+  transform: rotate(180deg);
+}
+
+/* Rojo puro solo para corazones */
+.heart-color {
+  color: #ff0000;
+}
+
+
+
